@@ -154,11 +154,27 @@ export default function SignInPage() {
         </div>
 
         <div className="space-y-1.5 text-zinc-950">
-          <div className="flex items-center justify-between">
             <label htmlFor="password" className={`${schibsted_grotesk.className} text-[13px] font-bold leading-[100%] text-[#1A0F0B]`}>
               Password
             </label>
-          </div>
+          
+          
+          <div className="relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="pointer-events-none absolute left-4 top-1/2 h-[20px] w-[20px] -translate-y-1/2 text-[#A99D97]"
+            >
+              <rect width="18" height="11" x="3" y="11" rx="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+
           <input
             id="password"
             type="password"
@@ -169,12 +185,29 @@ export default function SignInPage() {
             placeholder="••••••••"
             {...register('password')}
           />
+
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="pointer-events-none absolute right-4 top-1/2 h-[20px] w-[20px] -translate-y-1/2 text-[#A99D97]"
+            >
+              <path d="M2.062 12.348a1 1 0 0 1 0-.696C3.46 7.6 7.282 5 12 5c4.718 0 8.54 2.6 9.938 6.652a1 1 0 0 1 0 .696C20.54 16.4 16.718 19 12 19c-4.718 0-8.54-2.6-9.938-6.652" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
           {errors.password && (
             <p id="password-error" className="text-xs text-red-500" role="alert">
               {errors.password.message}
             </p>
           )}
         </div>
+       
 
         <button
           type="submit"
