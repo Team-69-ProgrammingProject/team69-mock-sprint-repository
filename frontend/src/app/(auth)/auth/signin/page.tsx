@@ -207,6 +207,24 @@ export default function SignInPage() {
             </p>
           )}
         </div>
+
+        <div className="flex items-center justify-between">
+          <label
+            className={`${schibsted_grotesk.className} flex items-center gap-2 text-[13px] font-normal text-[#6E625D]`}
+          >
+            <input
+              type="checkbox"
+              className="h-[18px] w-[18px] rounded-[4px] border border-[#B0BEC5] accent-[#87A1B2]"
+            />
+            Remember me
+          </label>
+
+          <span
+            className={`${schibsted_grotesk.className} text-[13px] font-bold text-[#B0BEC5]`}
+          >
+            Forgot password?
+          </span>
+        </div>
        
 
         <button
