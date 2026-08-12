@@ -18,7 +18,7 @@ const fraunces = Fraunces({
 })
 const schibsted_grotesk = Schibsted_Grotesk({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400','700'],
 })
 
 export default function SignInPage() {
@@ -163,7 +163,7 @@ export default function SignInPage() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full rounded-md bg-black px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+          className={`${schibsted_grotesk.className} h-[52px] w-full rounded-[12px] bg-gradient-to-r from-[#87A1B2] to-[#617A8F] px-4 text-[16px] leading-[100%] font-bold text-white shadow-[0_6px_16px_rgba(205,90,57,0.251),0_2px_4px_rgba(205,90,57,0.102)] transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50`}
         >
           {isSubmitting ? 'Signing in…' : 'Sign in'}
         </button>
