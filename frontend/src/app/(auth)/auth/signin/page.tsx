@@ -18,7 +18,7 @@ const fraunces = Fraunces({
 })
 const schibsted_grotesk = Schibsted_Grotesk({
   subsets: ['latin'],
-  weight: ['400','700'],
+  weight: ['400','700']
 })
 
 export default function SignInPage() {
@@ -117,7 +117,7 @@ export default function SignInPage() {
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="space-y-1.5 text-zinc-950">
-          <label htmlFor="email" className="text-sm font-bold">
+          <label htmlFor="email" className={`${schibsted_grotesk.className} text-[13px] font-bold leading-[100%] text-[#1A0F0B]`}>
             Email
           </label>
           <input
@@ -126,7 +126,7 @@ export default function SignInPage() {
             autoComplete="email"
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? 'email-error' : undefined}
-            className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-zinc-400 focus:ring-2 focus:ring-zinc-500 focus:outline-none aria-invalid:border-red-500 dark:border-zinc-700 dark:bg-zinc-900"
+            className={`${schibsted_grotesk.className} h-[50px] w-full rounded-[12px] border-[1.5px] border-[#B0BEC5] bg-[#FFFCFB] pl-11 text-[14px] font-normal text-[#2A1D19] shadow-[0_2px_8px_rgba(205,90,57,0.0392)] placeholder:text-[#2A1D19] focus:outline-none focus:ring-2 focus:ring-[#87A1B2] aria-invalid:border-red-500`}
             placeholder="you@example.com"
             {...register('email')}
           />
