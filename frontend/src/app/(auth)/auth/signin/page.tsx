@@ -109,7 +109,7 @@ export default function SignInPage() {
       
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-        <div className="space-y-1.5 text-zinc-950">
+        <div className="space-y-1.5 text-zinc-950 mt-4">
           <label htmlFor="email" className={`${schibsted_grotesk.className} text-[13px] font-bold leading-[100%] text-[#1A0F0B]`}>
             Email
           </label>
