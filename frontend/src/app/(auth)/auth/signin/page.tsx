@@ -11,6 +11,11 @@ import { loginSchema, type LoginInput } from '@/lib/validations/auth'
 import { FullPageSpinner } from '@/components/shared/LoadingSpinner'
 import { Fraunces } from 'next/font/google'
 
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  weight: ['700'],
+})
+
 export default function SignInPage() {
   const router = useRouter()
   const { user, loading, signInWithEmail, signInWithGoogle } = useAuth()
@@ -61,15 +66,12 @@ export default function SignInPage() {
       toast.error('Google sign-in failed. Please try again.')
     }
   }
-  const fraunces = Fraunces({
-    subsets: ['latin'],
-    weight: ['700'],
-  })
+
 
   return (
     <div className="space-y-6 bg-white p-8 shadow-sm rounded-md">
       <div className="space-y-1 text-center">
-        <h1 className="text-2xl text-zinc-950 font-bold font-kenac-black tracking-tight">Welcome Back</h1>
+        <h1 className={`${fraunces.className} w-full text-center text-[38px] leading-[100%] font-bold tracking-[0] text-[#1A0F0B]`}>Welcome back</h1>
         <p className="text-sm text-zinc-500">Sign in to continue to the dashboard</p>
       </div>
 
