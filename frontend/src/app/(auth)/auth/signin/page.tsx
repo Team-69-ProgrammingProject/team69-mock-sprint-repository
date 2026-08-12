@@ -64,8 +64,8 @@ export default function SignInPage() {
   return (
     <div className="space-y-6">
       <div className="space-y-1 text-center">
-        <h1 className="text-2xl font-bold tracking-tight">Sign in</h1>
-        <p className="text-sm text-zinc-500">Enter your credentials to continue</p>
+        <h1 className="text-2xl font-bold tracking-tight">Welcome Back</h1>
+        <p className="text-sm text-zinc-500">Sign in to continue to the dashboard</p>
       </div>
 
       <button
