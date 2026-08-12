@@ -157,11 +157,11 @@ export default function SignInPage() {
         </button>
       </form>
 
-      <p className="text-center text-sm text-zinc-500">
+      <p className="text-center text-sm text-zinc-950">
         Don&apos;t have an account?{' '}
         <Link
           href="/auth/signup"
-          className="font-medium text-zinc-900 hover:underline dark:text-white"
+          className="font-bold text-zinc-950 hover:underline"
         >
           Create one
         </Link>
