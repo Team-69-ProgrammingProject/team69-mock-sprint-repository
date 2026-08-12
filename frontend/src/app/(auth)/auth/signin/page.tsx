@@ -64,7 +64,7 @@ export default function SignInPage() {
   return (
     <div className="space-y-6 bg-white p-8 shadow-sm rounded-md">
       <div className="space-y-1 text-center">
-        <h1 className="text-2xl font-bold tracking-tight">Welcome Back</h1>
+        <h1 className="text-2xl text-zinc-950 font-bold tracking-tight">Welcome Back</h1>
         <p className="text-sm text-zinc-500">Sign in to continue to the dashboard</p>
       </div>
 
@@ -104,7 +104,7 @@ export default function SignInPage() {
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-        <div className="space-y-1.5">
+        <div className="space-y-1.5 text-zinc-950">
           <label htmlFor="email" className="text-sm font-medium">
             Email
           </label>
@@ -125,7 +125,7 @@ export default function SignInPage() {
           )}
         </div>
 
-        <div className="space-y-1.5">
+        <div className="space-y-1.5 text-zinc-950">
           <div className="flex items-center justify-between">
             <label htmlFor="password" className="text-sm font-medium">
               Password
