@@ -74,8 +74,8 @@ export default function SignInPage() {
 
 
   return (
-    <div className="space-y-6 bg-white p-8 shadow-sm rounded-md">
-      <div className="space-y-1 text-center">
+    <div className="w-full max-w-[480px] h-[547px] bg-white pt-[64px] px-[40px] pb-[40px] rounded-[24px] border border-[#EFECE6] shadow-[0_16px_40px_rgba(42,29,25,0.051),0_2px_8px_rgba(42,29,25,0.0118)]">
+      <div className="space-y-1 text-center mb-[48px]">
         <h1 className={`${fraunces.className} w-full text-center text-[38px] leading-[100%] font-bold tracking-[0] text-[#1A0F0B]`}>Welcome back</h1>
         <p className={`${schibsted_grotesk.className} w-full text-center text-[15px] leading-[150%] font-medium tracking-[0] text-[#6E625D]`}>Sign in to continue to the dashboard</p>
       </div>
@@ -83,7 +83,7 @@ export default function SignInPage() {
       <button
         type="button"
         onClick={handleGoogleSignIn}
-        className="flex w-full items-center justify-center gap-3 rounded-md border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+        className="flex w-full -mt-6 items-center justify-center gap-3 rounded-md border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
       >
         <svg className="h-4 w-4" viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -236,7 +236,7 @@ export default function SignInPage() {
         </button>
       </form>
 
-      <p className="text-center text-sm text-zinc-950">
+      <p className="text-center text-sm text-zinc-950 mt-6">
         Don&apos;t have an account?{' '}
         <Link
           href="/auth/signup"
