@@ -105,7 +105,7 @@ export default function SignInPage() {
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="space-y-1.5 text-zinc-950">
-          <label htmlFor="email" className="text-sm font-medium">
+          <label htmlFor="email" className="text-sm font-bold">
             Email
           </label>
           <input
@@ -127,7 +127,7 @@ export default function SignInPage() {
 
         <div className="space-y-1.5 text-zinc-950">
           <div className="flex items-center justify-between">
-            <label htmlFor="password" className="text-sm font-medium">
+            <label htmlFor="password" className="text-sm font-bold">
               Password
             </label>
           </div>
