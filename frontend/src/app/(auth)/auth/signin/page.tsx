@@ -10,10 +10,15 @@ import { useAuth } from '@/hooks/useAuth'
 import { loginSchema, type LoginInput } from '@/lib/validations/auth'
 import { FullPageSpinner } from '@/components/shared/LoadingSpinner'
 import { Fraunces } from 'next/font/google'
+import { Schibsted_Grotesk } from 'next/font/google'
 
 const fraunces = Fraunces({
   subsets: ['latin'],
   weight: ['700'],
+})
+const schibsted_grotesk = Schibsted_Grotesk({
+  subsets: ['latin'],
+  weight: ['400'],
 })
 
 export default function SignInPage() {
@@ -72,7 +77,7 @@ export default function SignInPage() {
     <div className="space-y-6 bg-white p-8 shadow-sm rounded-md">
       <div className="space-y-1 text-center">
         <h1 className={`${fraunces.className} w-full text-center text-[38px] leading-[100%] font-bold tracking-[0] text-[#1A0F0B]`}>Welcome back</h1>
-        <p className="text-sm text-zinc-500">Sign in to continue to the dashboard</p>
+        <p className={`${schibsted_grotesk.className} w-full text-center text-[15px] leading-[150%] font-medium tracking-[0] text-[#6E625D]`}>Sign in to continue to the dashboard</p>
       </div>
 
       <button
