@@ -4,6 +4,9 @@ import { redirect } from 'next/navigation'
 import { Fraunces } from 'next/font/google'
 import { Schibsted_Grotesk } from 'next/font/google'
 
+export const metadata: Metadata = {
+  title: 'Team',
+}
 const fraunces = Fraunces({
   subsets: ['latin'],
   weight: ['700'],
