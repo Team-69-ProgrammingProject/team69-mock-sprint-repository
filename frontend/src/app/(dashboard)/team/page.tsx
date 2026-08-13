@@ -62,7 +62,7 @@ export default async function Team() {
         redirect('/signin')
     }
     return (
-        <div className="min-h-screen bg-[#FAF7F2] text-black">
+        <div className="min-h-full overflow-y-auto bg-[#FAF7F2] text-black ">
             <div className="mx-auto">
                 <div className="text-center mb-12">
                     <h1 className={`${fraunces.className} text-[38px] font-bold text-slate-900 pt-30 mb-2`}>
