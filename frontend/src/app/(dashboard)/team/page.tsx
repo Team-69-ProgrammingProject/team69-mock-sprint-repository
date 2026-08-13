@@ -1,17 +1,17 @@
-import type { Metadata } from 'next'
 import { getServerSession } from '@/actions/auth.actions'
 import { redirect } from 'next/navigation'
 import { Fraunces } from 'next/font/google'
 import { Schibsted_Grotesk } from 'next/font/google'
+import Image from 'next/image'
 
 const fraunces = Fraunces({
-  subsets: ['latin'],
-  weight: ['700'],
+    subsets: ['latin'],
+    weight: ['700'],
 })
 const schibsted_grotesk = Schibsted_Grotesk({
-  subsets: ['latin'],
-  weight: ['400']
-  
+    subsets: ['latin'],
+    weight: ['400']
+
 })
 
 
@@ -77,11 +77,15 @@ export default async function Team() {
                             className={`${schibsted_grotesk.className} text-[14px] bg-[#FFFCFB] rounded-lg border-2 border-[#B0BEC5] p-6 flex flex-col items-center h-[239px] w-[250px] flex-shrink-0`}
                         >
                             <div className="h-20 w-20 flex items-center justify-center mb-4">
-                                <img
+
+                                <Image
                                     src="/userProfile.svg"
                                     alt="User Profile"
-                                    className="w-[106px] h-[106px]"
+                                    width={106}
+                                    height={106}
+                                    className="w-20 h-20"
                                 />
+
                             </div>
                             <h3 className="text-center text-sm font-medium text-[#2A1D19] mb-1">
                                 {member.name}
