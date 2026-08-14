@@ -20,6 +20,7 @@ const schibsted_grotesk = Schibsted_Grotesk({
 
 
 interface TeamMember {
+    photo: string
     id: number
     name: string
     role: string
@@ -32,33 +33,37 @@ const teamMembers: TeamMember[] = [
         name: 'Vincent Nguyen',
         role: 'PM',
         description: 'Coordinate timelines, manage the team, and keep the project on track.',
+        photo: '/team/vincent.jpg',
     },
     {
         id: 2,
         name: 'Haidar Malik',
         role: 'BA',
         description: 'Define requirements, analyse stakeholder needs, and bridge business with tech.',
+        photo: '/team/haidar.jpg',
     },
     {
         id: 3,
         name: 'Jae Dwyer',
         role: 'UX',
-        description: 'Design user flows, wireframes, and prototypes for intuitive experiences.'
+        description: 'Design user flows, wireframes, and prototypes for intuitive experiences.',
+        photo: '/team/jae.jpg',
     },
     {
         id: 4,
         name: 'Pema Tenzin',
         role: 'Dev 1',
         description: 'Build the solution, code, architecture, testing, and deployment.',
+        photo: '/team/pema.jpg',
     },
     {
         id: 5,
         name: 'Michael Lew',
         role: 'Dev 2',
         description: 'Build the solution, code, architecture, testing, and deployment.',
+        photo: '/team/michael.jpg',
     }
 ]
-
 
 export default async function Team() {
     const session = await getServerSession()
@@ -81,10 +86,9 @@ export default async function Team() {
                             className={`${schibsted_grotesk.className} text-[14px] bg-[#FFFCFB] rounded-lg border-2 border-[#B0BEC5] p-6 flex flex-col items-center h-[239px] w-[250px] flex-shrink-0`}
                         >
                             <div className="h-20 w-20 flex items-center justify-center mb-4">
-
                                 <Image
-                                    src="/userProfile.svg"
-                                    alt="User Profile"
+                                    src={member.photo}
+                                    alt={member.name}
                                     width={106}
                                     height={106}
                                     className="w-20 h-20"
