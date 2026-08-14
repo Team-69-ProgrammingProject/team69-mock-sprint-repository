@@ -4,6 +4,9 @@ import { Fraunces } from 'next/font/google'
 import { Schibsted_Grotesk } from 'next/font/google'
 import Image from 'next/image'
 
+export const metadata: Metadata = {
+  title: 'Team',
+}
 const fraunces = Fraunces({
     subsets: ['latin'],
     weight: ['700'],
@@ -62,7 +65,7 @@ export default async function Team() {
         redirect('/signin')
     }
     return (
-        <div className="min-h-screen bg-[#FAF7F2] text-black">
+        <div className="min-h-full overflow-y-auto bg-[#FAF7F2] text-black ">
             <div className="mx-auto">
                 <div className="text-center mb-12">
                     <h1 className={`${fraunces.className} text-[38px] font-bold text-slate-900 pt-30 mb-2`}>
