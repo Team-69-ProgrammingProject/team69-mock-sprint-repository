@@ -62,7 +62,7 @@ export default function SignInPage() {
       }
     }
   }
-
+/*
   const handleGoogleSignIn = async () => {
     try {
       await signInWithGoogle()
@@ -71,6 +71,7 @@ export default function SignInPage() {
       toast.error('Google sign-in failed. Please try again.')
     }
   }
+    */
 
 
   return (

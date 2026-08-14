@@ -14,7 +14,7 @@ const fraunces = Fraunces({
 })
 const schibsted_grotesk = Schibsted_Grotesk({
     subsets: ['latin'],
-    weight: ['400']
+    weight: ['400'],
 
 })
 
