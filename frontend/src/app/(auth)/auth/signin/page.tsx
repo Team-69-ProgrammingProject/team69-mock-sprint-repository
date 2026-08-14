@@ -53,7 +53,7 @@ export default function SignInPage() {
       await signInWithEmail(data.email, data.password)
       toast.success('Signed in successfully')
       router.replace('/team')
-      router.refresh()
+      //router.refresh()
     } catch (error: unknown) {
       if (error instanceof Error && error.message.includes('email-not-verified')) {
         toast.error('Please verify your email before signing in.')
@@ -62,7 +62,7 @@ export default function SignInPage() {
       }
     }
   }
-
+/*
   const handleGoogleSignIn = async () => {
     try {
       await signInWithGoogle()
@@ -71,6 +71,7 @@ export default function SignInPage() {
       toast.error('Google sign-in failed. Please try again.')
     }
   }
+    */
 
 
   return (
