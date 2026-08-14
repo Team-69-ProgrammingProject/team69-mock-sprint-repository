@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { getServerSession } from '@/actions/auth.actions'
 import { redirect } from 'next/navigation'
 import { Fraunces } from 'next/font/google'
