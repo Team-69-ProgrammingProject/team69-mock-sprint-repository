@@ -1,0 +1,37 @@
+Feature Review — Team Page & Login Styling
+
+Team Page Requirements
+
+ Team name displayed clearly at top of page
+ Member photo displayed at consistent size, placeholder avatar is not used because all images are available.
+ Member name displayed clearly
+ Member role displayed (PM, BA, UX, Dev 1, Dev 2)
+ Short blurb displayed per member
+
+Team Page Display Requirements
+ Consistent layout used across all team members
+ Page remains readable across common screen sizes
+ Member photos use consistent dimensions
+ Text overlap with other content is not immediately present
+ Long text does not wrap appropriately
+
+Login Page Scope
+
+ Styling-only changes applied (layout, colours, typography, spacing, buttons)
+ No changes made to authentication logic
+ No changes made to login functionality
+ No changes made to Firebase/authentication configuration
+ No changes made to session behaviour
+ No changes made to user permissions
+ No changes made to existing login validation logic
+ Existing login functionality confirmed to behave as before
+
+Edge Cases
+
+ No photo → placeholder/default does not display
+ Long name → does not wrap/resize without overlap
+ Long blurb → does not wrap across multiple lines without overlap
+ Missing blurb → member card still displays correctly
+ Tested across different screen sizes → readable and usable
+
+Overall: Feature reviewed end-to-end against requirements and design. Majority of items pass.
