@@ -15,6 +15,14 @@ Each test was conducted within the deployed Vercel application and the local dep
 **Result:** PASS
 Invalid Login tested on deployed URL: Incorrect credentials were rejected with a pop-up message of "invalid email/password". Validation error messages were shown when either fields were blank.
 
+![Invalid login test](./screenshots/invalidemail_pass.png)
+![Blank Field test](./screenshots/blank_signin_field.png)
+
+### Tean Redirect
+PASS: Direct team-page access without login tested. Redirects users to the sign in page.
+![Team Redirect](./screenshots/teamredirect.png)
+![Redirect to Sign In](./screenshots/signinredirect.png)
+
 ### Missing Photo
 **Result:** FAIL (NOW FIXED AND PASS)
 Missing Photo: When changing the path of an avatar photo to make avatar unavailable, there is no placeholder avatar.
